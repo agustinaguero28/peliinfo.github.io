@@ -1,0 +1,214 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+
+.navbarcontenedor{
+	background-color: #64276d;
+}
+.imglogo{
+	height: 50px;
+}
+.palabranav{
+	color: #fff ;
+	margin: 10px;
+}
+
+.palabranav:hover{
+	color: #ffc300;
+}
+#activo{
+	color: #ffc300;
+}
+
+
+.titulo-decorado {
+    text-align: center; /* centra los elementos */
+    margin-top: 50px; /* margen superior para separar del contenido anterior */
+    margin-bottom: 50px; /* margen inferior para separar del contenido siguiente */
+  }
+  
+  .linea {
+    width: 100px; /* ancho de la línea */
+    height: 1px; /* grosor de la línea */
+    background-color: #100A1F; /* color de la línea */
+    display: inline-block; /* hace que la línea sea un elemento en línea */
+    margin: 10px; /* espacio entre la línea y el texto */
+  }
+  
+  .titulo{
+    display: inline-block; /* hace que el título sea un elemento en línea */
+    font-size: 36px; /* tamaño de la fuente */
+    font-weight: bold; 
+  }
+
+  #fecha{
+  
+    color: #100A1F;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 5px;
+	border-radius: 15px;
+}
+
+.paginacion {
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #137c32;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.titulo-decorado {
+    text-align: center; /* centra los elementos */
+    margin-top: 50px; /* margen superior para separar del contenido anterior */
+    margin-bottom: 50px; /* margen inferior para separar del contenido siguiente */
+  }
+  
+  .linea {
+    width: 100px; /* ancho de la línea */
+    height: 1px; /* grosor de la línea */
+    background-color: #100A1F; /* color de la línea */
+    display: inline-block; /* hace que la línea sea un elemento en línea */
+    margin: 10px; /* espacio entre la línea y el texto */
+  }
+  
+  .titulouno{
+    display: inline-block; /* hace que el título sea un elemento en línea */
+    font-size: 36px; /* tamaño de la fuente */
+    font-weight: bold; 
+  }
+
+  #fecha{
+  
+    color: #100A1F;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+  }
+
+.pelicula {
+	text-align: center;
+
+  }
+  
+  .poster {
+	width: 100%;
+	margin-bottom: 5px;
+	border-radius: 15px;
+  }
+  
+  .titulo {
+	font-size: 16px;
+	font-weight: 600;
+}
+  
+  
+  /* Estilos de las series */
+  
+  .serie {
+    text-align: center;
+
+  }
+  
+  .portada {
+	width: 100%;
+	margin-bottom: 5px;
+	border-radius: 15px;
+  }
+  
+  .titulo-serie {
+	font-size: 16px;
+	font-weight: 600;
+  }
+
+
+@media only screen and (max-width: 768px) {
+	.contenedor {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.contenedor {
+		grid-template-columns: repeat(1, 1fr);
+		gap: 20px;
+	}
+
+	.paginacion {
+		flex-wrap: wrap;
+		padding: 10px 0;
+	}
+
+	.paginacion button {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+}
+
